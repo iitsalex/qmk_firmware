@@ -49,7 +49,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     { D0, B3, B6, F7, F5, F4 } \
 }
 //speed for double tap
-#define TAPPING_TERM 200
+#define TAPPING_TERM 100
 
 #define UNUSED_PINS
 
