@@ -37,25 +37,6 @@ void encoder_update_user(uint8_t index, bool clockwise) {
     }
 }
 
-// void encoder_update_user(uint8_t index, bool clockwise) {
-//     switch (biton32(layer_state)) {
-//         case 1:
-//             if (clockwise) {
-//                 LCTL(KC_UP);
-//             } else {
-//                 LCTL(KC_DOWN);
-//             }
-//             break;
-//         default:
-//             if (clockwise) {
-//                 tap_code(KC_VOLU);
-//             } else {
-//                 tap_code(KC_VOLD);
-//             }
-//             break;
-//     }
-// }
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = { //buttion closest to usb is first
   [_MAIN] = LAYOUT(
     TO(_SPOTIFY), TD(TD_SPOTIFY), TD(TD_DISCORD), KC_MNXT, KC_MPLY, KC_MPRV
