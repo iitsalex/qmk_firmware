@@ -22,9 +22,9 @@ void encoder_update_user(uint8_t index, bool clockwise) {
     switch(biton32(layer_state)){
         case 1:
             if (clockwise) {
-                tap_code16(C(KC_UP));       // does LCTRL + UP for spotify vol up
+                tap_code16(KC_F18);       // does LCTRL + UP for spotify vol up
             } else {
-                tap_code16(C(KC_DOWN));     // does LCTRL + DOWN for spotify vol down
+                tap_code16(KC_F17);     // does LCTRL + DOWN for spotify vol down
             }
             break;
         default:
@@ -42,6 +42,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = { //buttion closest
     TO(_SPOTIFY), TD(TD_SPOTIFY), TD(TD_DISCORD), KC_MNXT, KC_MPLY, KC_MPRV
   ),
   [_SPOTIFY] = LAYOUT(
-    TO(_MAIN), TD(TD_SPOTIFY), TD(TD_DISCORD), KC_MNXT, KC_MPLY, KC_MPRV
+    TO(_MAIN), TD(TD_SPOTIFY), TD(TD_DISCORD), KC_F16, KC_F15, KC_F14
   )
 };
